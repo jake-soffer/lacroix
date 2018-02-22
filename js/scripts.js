@@ -42,7 +42,6 @@ $(document).ready(function()  {
     if (favColor === "blue") {
       $("#pure").fadeIn();
     }
-
     if (favColor === "yellow") {
       $("#lemon").fadeIn();
     }
@@ -58,5 +57,10 @@ $(document).ready(function()  {
     if (favColor === "pink") {
       $("#cranraspberry").fadeIn();
     }
+  });
+
+  $("#reset").click(function(event) {
+    event.preventDefault();
+    location.reload();
   });
 });

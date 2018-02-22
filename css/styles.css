@@ -6,3 +6,7 @@
 #pure, #lemon, #berry, #pamplemousse, #cranraspberry {
   display: none;
 }
+
+img {
+  max-width: 140px;
+}

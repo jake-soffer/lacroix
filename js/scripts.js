@@ -14,18 +14,18 @@ $(document).ready(function()  {
   $("#favcolornext").click(function(event) {
     event.preventDefault();
     $("#question-favcolor").hide();
-    $("#question-birthday").show();
+    $("#question-frequency").show();
   });
 
-  $("#birthdaynext").click(function(event) {
+  $("#frequencynext").click(function(event) {
     event.preventDefault();
-    $("#question-birthday").hide();
-    $("#question-wives").show();
+    $("#question-frequency").hide();
+    $("#question-number").show();
   });
 
-  $("#wivesnext").click(function() {
+  $("#numbernext").click(function() {
     event.preventDefault();
-    $("#question-wives").hide();
+    $("#question-number").hide();
     $("#question-sparkling").show();
   });
 
@@ -35,8 +35,8 @@ $(document).ready(function()  {
     var name = $("#name").val();
     var age = parseInt($("#age").val());
     var favColor = $("input:radio[name=favcolor]:checked").val();
-    var birthday = $("input:radio[name=birthday]:checked").val();
-    var wives = $("input:radio[name=wives]:checked").val();
+    var frequency = $("input:radio[name=frequency]:checked").val();
+    var number = $("input:radio[name=number]:checked").val();
     var sparkling = $("input:radio[name=sparkling]:checked").val();
 
     if (favColor === "blue") {

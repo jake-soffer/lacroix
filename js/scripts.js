@@ -61,15 +61,36 @@ $(document).ready(function()  {
       $("#lemon").fadeIn();
     }
 
-    if (favColor === "purple") {
+    if (favColor === "purple" && sparkling === "yes") {
+      $("#cranraspberry").hide();
+      $("#berry").fadeIn();
+    } else if (favColor === "purple" && sparkling === "no") {
+      $("#berry").hide();
+      $("#cranraspberry").fadeIn();
+    } else if (favColor === "purple" && sparkling === "unsure") {
+      $("#cranraspberry").hide();
       $("#berry").fadeIn();
     }
 
-    if (favColor === "orange") {
+    if (favColor === "orange" && sparkling === "yes") {
+      $("#lemon").hide();
+      $("#pamplemousse").fadeIn();
+    } else if (favColor === "orange" && sparkling === "no") {
+      $("#pamplemousse").hide();
+      $("#lemon").fadeIn();
+    } else if (favColor === "orange" && sparkling === "unsure") {
+      $("#lemon").hide();
       $("#pamplemousse").fadeIn();
     }
 
-    if (favColor === "pink") {
+    if (favColor === "pink" && sparkling ==="yes") {
+      $("#berry").hide();
+      $("#cranraspberry").fadeIn();
+    } else if (favColor === "pink" && sparkling ==="no") {
+      $("#cranraspberry").hide();
+      $("#berry").fadeIn();
+    } else if (favColor === "pink" && sparkling ==="unsure") {
+      $("#berry").hide();
       $("#cranraspberry").fadeIn();
     }
   });

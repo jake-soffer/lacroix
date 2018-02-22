@@ -2,11 +2,18 @@
   display: none;
 }
 
-
 #pure, #lemon, #berry, #pamplemousse, #cranraspberry {
   display: none;
 }
 
 img {
   max-width: 140px;
+}
+
+#title {
+  color: navy;
+}
+
+body {
+  background-color: #c4fffd;
 }

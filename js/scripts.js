@@ -39,10 +39,25 @@ $(document).ready(function()  {
     var number = $("input:radio[name=number]:checked").val();
     var sparkling = $("input:radio[name=sparkling]:checked").val();
 
-    if (favColor === "blue") {
+    if (favColor === "blue" && sparkling === "yes") {
+      $("#berry").hide();
+      $("#pure").fadeIn();
+    } else if (favColor === "blue" && sparkling === "no") {
+      $("#pure").hide();
+      $("#berry").fadeIn();
+    } else if (favColor === "blue" && sparkling === "unsure") {
+      $("#berry").hide();
       $("#pure").fadeIn();
     }
-    if (favColor === "yellow") {
+
+    if (favColor === "yellow" && sparkling === "yes") {
+      $("#pamplemousse").hide();
+      $("#lemon").fadeIn();
+    } else if (favColor === "yellow" && sparkling === "no") {
+      $("#lemon").hide();
+      $("#pamplemousse").fadeIn();
+    } else if (favColor === "yellow" && sparkling === "unsure") {
+      $("#pamplemousse").hide();
       $("#lemon").fadeIn();
     }
 
@@ -59,8 +74,7 @@ $(document).ready(function()  {
     }
   });
 
-  $("#reset").click(function(event) {
-    event.preventDefault();
+  $(".reset").click(function() {
     location.reload();
   });
 });

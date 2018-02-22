@@ -1,8 +1,8 @@
-#question-age, #question-favcolor, #question-wives, #question-sparkling {
+#question-age, #question-favcolor, #question-birthday, #question-wives, #question-sparkling {
   display: none;
 }
 
 
-#pure, #lemon, #peachpear, #pamplemousse {
+#pure, #lemon, #berry, #pamplemousse, #cranraspberry {
   display: none;
 }

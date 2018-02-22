@@ -3,18 +3,6 @@
 }
 
 
-#pure {
-  display: none;
-}
-
-#lemon {
-  display: none;
-}
-
-#peachpear {
-  display: none;
-}
-
-#pamplemousse {
+#pure, #lemon, #peachpear, #pamplemousse {
   display: none;
 }

@@ -10,46 +10,56 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which flavor of La Croix are you?</h1>
-      <p>Answer the following questions to find out!</p>
       <div class="row">
-        <div class="col-md-4">
-          <form>
-            <div class="form-group">
-              <label for="name">What is your name?</label>
-              <input id="name" class="form-control" type="text">
+        <div class="col-md-6">
+          <h1>Which flavor of La Croix are you?</h1>
+          <p>Answer the following questions to find out!</p>
+          <form id="questions">
+            <div id="question-name">
+              <div class="form-group">
+                <label for="name">What is your name?</label>
+                <input id="name" class="form-control" type="text">
+              </div>
+            <button id="namenext" class="btn btn-warning">Next</button>
             </div>
-            <div class="form-group">
-              <label for "age">What is your age in years?</label>
-              <input id="age" class="form-control" type="number">
+            <div id="question-age">
+              <div class="form-group">
+                <label for "age">What is your age in years?</label>
+                <input id="age" class="form-control" type="number">
+              </div>
+            <button id="agenext" class="btn btn-warning">Next</button>
             </div>
-            <h5><strong>What is your favorite color?</strong></h5>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="favcolor" value="blue">Blue
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="favcolor" value="yellow">Yellow
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="favcolor" value="purple">Purple
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="favcolor" value="orange">Orange
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="favcolor" value="pink">Pink
-                </label>
-              </div>
-            <h5><strong>How many wives did King Henry VIII of England have?</strong></h5>
+            <div id="question-favcolor">
+              <h5><strong>What is your favorite color?</strong></h5>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="favcolor" value="blue">Blue
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="favcolor" value="yellow">Yellow
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="favcolor" value="purple">Purple
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="favcolor" value="orange">Orange
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="favcolor" value="pink">Pink
+                  </label>
+                </div>
+              <button id="favcolornext" class="btn btn-warning">Next</button>
+            </div>
+            <div id="question-wives">
+              <h5><strong>How many wives did King Henry VIII of England have?</strong></h5>
               <div class="radio">
                 <label>
                   <input type="radio" name="wives" value="1">1
@@ -70,11 +80,50 @@
                   <input type="radio" name="wives" value="8">8
                 </label>
               </div>
-
-            <button type="submit" class="btn btn-danger">Submit</button>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="wives" value="12">12
+                </label>
+              </div>
+            <button id="wivesnext" class="btn btn-warning">Next</button>
+            </div>
+            <div id="question-sparkling">
+              <h5><strong>Do you even like sparkling water?</strong></h5>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sparkling" value="yes">Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sparkling" value="no">No
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sparkling" value="maybe">Unsure at this moment
+                  </label>
+                </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
           </form>
+        <div class="col-md-6">
+          <div class="results">
+            <div id="pure">
+              <h1>Pure</h1>
+            </div>
+            <div id="lemon">
+              <h1>Lemon</h1>
+            </div>
+            <div id="peachpear">
+              <h1>Peach Pear</h1>
+            </div>
+            <div id="pamplemousse">
+              <h1>Pamplemousse</h1>
+            </div>
+          </div>
         </div>
-
+      </div>
       </div>
     </div>
   </body>
